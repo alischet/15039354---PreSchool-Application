@@ -14,6 +14,13 @@
 		C310F2E21DCF59AC00E1326B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C310F2E01DCF59AC00E1326B /* LaunchScreen.storyboard */; };
 		C310F2ED1DCF59AC00E1326B /* _5039354_PreSchoolAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C310F2EC1DCF59AC00E1326B /* _5039354_PreSchoolAppTests.swift */; };
 		C310F2F81DCF59AC00E1326B /* _5039354_PreSchoolAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C310F2F71DCF59AC00E1326B /* _5039354_PreSchoolAppUITests.swift */; };
+		C310F3061DDCE17000E1326B /* PodFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = C310F3051DDCE17000E1326B /* PodFile.xib */; };
+		C310F3081DDCE19200E1326B /* PodFile in Resources */ = {isa = PBXBuildFile; fileRef = C310F3071DDCE19200E1326B /* PodFile */; };
+		C310F30A1DE07F7900E1326B /* PodFile.xib in Resources */ = {isa = PBXBuildFile; fileRef = C310F3091DE07F7900E1326B /* PodFile.xib */; };
+		C310F3491DE9F8CF00E1326B /* DraggableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C310F3481DE9F8CF00E1326B /* DraggableImage.swift */; };
+		C310F34C1DEA0EC000E1326B /* star_kids.png in Resources */ = {isa = PBXBuildFile; fileRef = C310F34B1DEA0EC000E1326B /* star_kids.png */; };
+		C310F34E1DEA0EEE00E1326B /* number4.png in Resources */ = {isa = PBXBuildFile; fileRef = C310F34D1DEA0EEE00E1326B /* number4.png */; };
+		C310F3501DEA0FAE00E1326B /* starblank.png in Resources */ = {isa = PBXBuildFile; fileRef = C310F34F1DEA0FAE00E1326B /* starblank.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,13 @@
 		C310F2F31DCF59AC00E1326B /* 15039354_PreSchoolAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 15039354_PreSchoolAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C310F2F71DCF59AC00E1326B /* _5039354_PreSchoolAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _5039354_PreSchoolAppUITests.swift; sourceTree = "<group>"; };
 		C310F2F91DCF59AC00E1326B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C310F3051DDCE17000E1326B /* PodFile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodFile.xib; sourceTree = "<group>"; };
+		C310F3071DDCE19200E1326B /* PodFile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PodFile; sourceTree = "<group>"; };
+		C310F3091DE07F7900E1326B /* PodFile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PodFile.xib; sourceTree = "<group>"; };
+		C310F3481DE9F8CF00E1326B /* DraggableImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableImage.swift; sourceTree = "<group>"; };
+		C310F34B1DEA0EC000E1326B /* star_kids.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star_kids.png; sourceTree = SOURCE_ROOT; };
+		C310F34D1DEA0EEE00E1326B /* number4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = number4.png; path = ../../../Downloads/number4.png; sourceTree = "<group>"; };
+		C310F34F1DEA0FAE00E1326B /* starblank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = starblank.png; path = ../../../Downloads/starblank.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,10 @@
 		C310F2CB1DCF59AC00E1326B = {
 			isa = PBXGroup;
 			children = (
+				C310F3481DE9F8CF00E1326B /* DraggableImage.swift */,
+				C310F3091DE07F7900E1326B /* PodFile.xib */,
+				C310F3051DDCE17000E1326B /* PodFile.xib */,
+				C310F3071DDCE19200E1326B /* PodFile */,
 				C310F2D61DCF59AC00E1326B /* 15039354_PreSchoolApp */,
 				C310F2EB1DCF59AC00E1326B /* 15039354_PreSchoolAppTests */,
 				C310F2F61DCF59AC00E1326B /* 15039354_PreSchoolAppUITests */,
@@ -97,6 +115,7 @@
 		C310F2D61DCF59AC00E1326B /* 15039354_PreSchoolApp */ = {
 			isa = PBXGroup;
 			children = (
+				C310F34A1DEA0EB000E1326B /* SupportingFiles */,
 				C310F2D71DCF59AC00E1326B /* AppDelegate.swift */,
 				C310F2D91DCF59AC00E1326B /* ViewController.swift */,
 				C310F2DB1DCF59AC00E1326B /* Main.storyboard */,
@@ -123,6 +142,16 @@
 				C310F2F91DCF59AC00E1326B /* Info.plist */,
 			);
 			path = 15039354_PreSchoolAppUITests;
+			sourceTree = "<group>";
+		};
+		C310F34A1DEA0EB000E1326B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C310F34F1DEA0FAE00E1326B /* starblank.png */,
+				C310F34D1DEA0EEE00E1326B /* number4.png */,
+				C310F34B1DEA0EC000E1326B /* star_kids.png */,
+			);
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +262,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C310F2E21DCF59AC00E1326B /* LaunchScreen.storyboard in Resources */,
+				C310F3081DDCE19200E1326B /* PodFile in Resources */,
 				C310F2DF1DCF59AC00E1326B /* Assets.xcassets in Resources */,
+				C310F34E1DEA0EEE00E1326B /* number4.png in Resources */,
+				C310F3501DEA0FAE00E1326B /* starblank.png in Resources */,
+				C310F30A1DE07F7900E1326B /* PodFile.xib in Resources */,
+				C310F34C1DEA0EC000E1326B /* star_kids.png in Resources */,
 				C310F2DD1DCF59AC00E1326B /* Main.storyboard in Resources */,
+				C310F3061DDCE17000E1326B /* PodFile.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C310F2DA1DCF59AC00E1326B /* ViewController.swift in Sources */,
+				C310F3491DE9F8CF00E1326B /* DraggableImage.swift in Sources */,
 				C310F2D81DCF59AC00E1326B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +541,7 @@
 				C310F2FE1DCF59AC00E1326B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C310F2FF1DCF59AC00E1326B /* Build configuration list for PBXNativeTarget "15039354_PreSchoolAppTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +550,7 @@
 				C310F3011DCF59AC00E1326B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C310F3021DCF59AC00E1326B /* Build configuration list for PBXNativeTarget "15039354_PreSchoolAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +559,7 @@
 				C310F3041DCF59AC00E1326B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

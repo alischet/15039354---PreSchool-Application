@@ -7,14 +7,19 @@
 //
 
 import UIKit
-import Cocoa
+import AVFoundation
 
 class ViewController: UIViewController {
     
     
+    
     //declare draggable view
     @IBOutlet weak var viewApples: UIView!
+    @IBOutlet weak var viewPlate: UIImageView!
+    @IBOutlet weak var lblQuest: UILabel!
     
+   
+    @IBOutlet weak var FlashStar: UIImageView!
     
     //draggable Apples
     @IBOutlet weak var imgApple1: UIImageView!
@@ -27,7 +32,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var imgApple8: UIImageView!
     @IBOutlet weak var imgApple9: UIImageView!
     
-    
+    @IBOutlet weak var viewDraggable: UIView!
+    @IBOutlet weak var viewNums: UIView!
+    @IBOutlet weak var viewPlatesApple: UIView!
+   
+    @IBOutlet weak var viewSum: UIView!
+   
     
     @IBOutlet weak var imageView: UIImageView!
   //  var ImageList = UIImage []()
@@ -44,14 +54,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var lblValTwoAns: UILabel!
     @IBOutlet weak var lblValOneAns: UILabel!
-    
+  
     @IBOutlet weak var lblAnswer: UILabel!
 
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+     
         // Do any additional setup after loading the view, typically from a nib.
+        //  lblValTwo.adjustsFontSizeToFitWidth = true
+        //    lblValTwo.minimumScaleFactor = 0.2
+
         
         
         //generating random numbers for sum
@@ -71,9 +85,18 @@ class ViewController: UIViewController {
     //switch views
     //regenerate random numbers
     @IBAction func btnTryAgain(_ sender: UIButton) {
-        
-        self.viewAnswer.isHidden = true
         self.loadView()
+        self.viewAnswer.isHidden = true
+        self.viewNums.isHidden = false
+        self.viewPlatesApple.isHidden = false
+        self.viewSum.isHidden = false
+        viewPlate.isHidden = false
+        
+        
+       lblValOne.text = String(arc4random_uniform(4))
+       lblValTwo.text = String(arc4random_uniform(4))
+
+        
         
     }
     
@@ -150,22 +173,47 @@ class ViewController: UIViewController {
 
             
             //show view with succesful answer
+            self.viewNums.isHidden = true
+            self.viewPlatesApple.isHidden = true
+            self.viewSum.isHidden = true
+            viewPlate.isHidden = true
+
             self.viewAnswer.isHidden = false
             
+            FlashStar.animationImages = [
+                UIImage(named: "star_kids.png")!,
+                UIImage(named: "starblank.png")!]
             
+            
+            FlashStar.animationDuration=1
+            FlashStar.startAnimating()
+            
+
         }
         else {
+            //show view with succesful answer
+            self.viewNums.isHidden = true
+            self.viewPlatesApple.isHidden = true
+            self.viewSum.isHidden = true
+            viewPlate.isHidden = true
+            
+            self.viewAnswer.isHidden = false
             //flicker question mark for wrong answer
+            lblQuest.textColor = UIColor.red
+            
         }
     }
+
+
     
+                
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         for touch in (touches) {
-          let location = touch.location(in: self.view)
+        //  let location = touch.location(in: self.view)
       
             
              //   let location = CGPoint(x: 200, y: 300)
-            //   let location = touch.location(in: viewApples)
+            let location = touch.location(in: viewDraggable)
             
             if imgApple1.frame.contains(location){
                 imgApple1.center = location
