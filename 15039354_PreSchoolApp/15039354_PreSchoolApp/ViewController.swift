@@ -61,6 +61,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loadDesign()
      
         // Do any additional setup after loading the view, typically from a nib.
         //  lblValTwo.adjustsFontSizeToFitWidth = true
@@ -68,15 +69,26 @@ class ViewController: UIViewController {
 
         
         
-        //generating random numbers for sum
-        lblValOne.text = String(arc4random_uniform(4))
-        lblValTwo.text = String(arc4random_uniform(4))
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+     func loadDesign()
+    {
+        //generating random numbers for sum
+        lblValOne.text = String(arc4random_uniform(4))
+        lblValTwo.text = String(arc4random_uniform(4))
+        self.viewAnswer.isHidden = true
+        self.viewNums.isHidden = false
+        self.viewPlatesApple.isHidden = false
+        self.viewSum.isHidden = false
+        viewPlate.isHidden = false
+        lblQuest.textColor = UIColor.black
+
     }
 
     
@@ -85,18 +97,8 @@ class ViewController: UIViewController {
     //switch views
     //regenerate random numbers
     @IBAction func btnTryAgain(_ sender: UIButton) {
-        self.loadView()
-        self.viewAnswer.isHidden = true
-        self.viewNums.isHidden = false
-        self.viewPlatesApple.isHidden = false
-        self.viewSum.isHidden = false
-        viewPlate.isHidden = false
-        
-        
-       lblValOne.text = String(arc4random_uniform(4))
-       lblValTwo.text = String(arc4random_uniform(4))
-
-        
+        self.loadDesign()
+     
         
     }
     
